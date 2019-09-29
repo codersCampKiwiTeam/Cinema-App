@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const App = () => {
-    return <div>Hello Kiwi!</div>;
-};
+import App from './components/App';
 
 ReactDOM.render(<App/>, document.querySelector('#root'));
