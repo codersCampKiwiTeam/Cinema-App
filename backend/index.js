@@ -12,7 +12,7 @@ app.options("*", cors({
 }));
 
 //mongoose.connect('mongodb://localhost/localTest')
-mongoose.connect('mongodb+srv://KiwiTeam:coderscamp2019@kiwi-cinema-f05fn.mongodb.net/admin?retryWrites=true&w=majority', { 
+mongoose.connect('mongodb://KiwiTeam:coderscamp2019@kiwi-cinema-shard-00-00-f05fn.mongodb.net:27017,kiwi-cinema-shard-00-01-f05fn.mongodb.net:27017,kiwi-cinema-shard-00-02-f05fn.mongodb.net:27017/kiwi?ssl=true&replicaSet=kiwi-cinema-shard-0&authSource=admin&retryWrites=true&w=majority', { 
 useNewUrlParser: true, useUnifiedTopology: true    
 })
 .then(() => console.log('Connected to MongoDB...'))
