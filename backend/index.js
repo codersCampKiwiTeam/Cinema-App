@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const Reservation = require('./models/Reservation');
 
 app.use(cors());
 app.options("*", cors({ 
@@ -10,6 +11,7 @@ app.options("*", cors({
     "allowedHeaders" : "X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, x-auth-token"
 }));
 
+//mongoose.connect('mongodb://localhost/localTest')
 mongoose.connect('mongodb+srv://KiwiTeam:coderscamp2019@kiwi-cinema-f05fn.mongodb.net/admin?retryWrites=true&w=majority', { 
 useNewUrlParser: true, useUnifiedTopology: true    
 })
@@ -26,3 +28,27 @@ app.use('/reservations', require('./routes/ReservationController.js'));
 const PORT = process.env.PORT || 5005;
 
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
+
+//test
+async function createTest() {
+    const test = new Reservation({
+        movie: 'Avengers',
+        seansDate: '20-12-2019',
+        seansHour: '20:00',
+        places: [12],
+        firstName: 'Jan',
+        lastName: 'Kowalski',
+        email: 'kowalski@gmail.com',
+        phone: ''
+    });
+    
+    try {
+        const result = await test.save();
+        console.log(result);
+    }
+    catch (ex) {
+        console.log(ex)
+    }
+};
+
+createTest();

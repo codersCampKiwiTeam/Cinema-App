@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const userSchema = require('./User');
 
 // Tworzę nowy schemat:
 var reservationSchema = new mongoose.Schema({
@@ -8,11 +7,11 @@ var reservationSchema = new mongoose.Schema({
         required: true
     },
     seansDate: {
-        type: Date,
+        type: String,
         required: true
     },
     seansHour: {
-        type: Number,
+        type: String,
         required: true
     },
     places: {
@@ -24,7 +23,29 @@ var reservationSchema = new mongoose.Schema({
             message: 'Musisz wybrać przynajmniej jedno miejsce.'
         }
     },
-    user: userSchema
+    firstName: {
+        type: String,
+        required: true,
+        maxlength: 50,
+        uppercase: true
+    },
+    lastName: {
+        type: String,
+        required: true,
+        maxlength: 50,
+        uppercase: true
+    },
+    email: {
+        type: String,
+        required: true,
+        maxlength: 50,
+        match: /.*@.*/
+    },
+    phone: {
+        type: String,
+        required: false,
+        maxlength: 16
+    }
 });
 
 // Na podstawie schematu tworzę Klasę dla danej kolekcji:
