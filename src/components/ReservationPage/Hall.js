@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hall.css";
+import CompletedReservation from './CompletedReservation';
 
 class Hall extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class Hall extends React.Component {
             tickets: tickets,
             seats: [],
             seatsNumber: 0,
+            reservationNumber: ""
          };
       };
 
@@ -107,7 +109,9 @@ class Hall extends React.Component {
 			} else {
 				res.json()
 					.then(json => {
-                        alert(`Your reservation number is ${json._id}`);
+                        // alert(`Your reservation number is ${json._id}`);
+                        this.setState({reservationNumber : json._id});
+                        document.getElementById("popup").style.display = "flex";
 					});
 			}
 		})
@@ -153,7 +157,8 @@ class Hall extends React.Component {
               <div className="row">{this.renderRow("XIII", 12)}</div>
               <div className="row">{this.renderRow("XIV", 12)}</div>
             </div>
-            <button id="btn-reservation" onClick={this.sentReservation}>Reserve</button>
+            <button id="btn-reservation" onClick={this.sentReservation}>Book</button>
+            <CompletedReservation reservationNumber = {this.state.reservationNumber} />
           </div>
         )
     };

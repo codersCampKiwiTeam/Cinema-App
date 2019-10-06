@@ -58,56 +58,61 @@ class Tickets extends React.Component {
         return (
             <div className="form-container">
                 <form>
-                    <div className="date-container">
-                        <div className="date">
-                        <div>
-                            <input type="radio" id={tommorow} name="day-radio" value={tommorow} onClick={this.onDayClick}/>
-                            <label htmlFor={tommorow}>{tommorow}</label>
+                    <div className="form-panel">
+                        <div className="date-container">
+                            <h1>Day:</h1>
+                            <div className="date">
+                                <div>
+                                    <input type="radio" id={tommorow} name="day-radio" value={tommorow} onClick={this.onDayClick}/>
+                                    <label htmlFor={tommorow}>{tommorow}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id={afterTommorow} name="day-radio" value={afterTommorow} onClick={this.onDayClick}/>
+                                    <label htmlFor={afterTommorow}>{afterTommorow}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id={afterAfterTommorow} name="day-radio" value={afterAfterTommorow} onClick={this.onDayClick}/>
+                                    <label htmlFor={afterAfterTommorow}>{afterAfterTommorow}</label>
+                                </div>
+                            </div>
+                            <h1>Hour</h1>
+                            <div className="hour">
+                                <div>
+                                    <input type="radio" id="12:30" name="hour-radio" value="12:30" onClick={this.onHourClick}/>
+                                    <label htmlFor="12:30">12:30</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="14:00" name="hour-radio" value="14:00" onClick={this.onHourClick}/>
+                                    <label htmlFor="14:00">14:00</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="16:30" name="hour-radio" value="16:30" onClick={this.onHourClick}/>
+                                    <label htmlFor="16:30">16:30</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="19:45" name="hour-radio" value="19:45" onClick={this.onHourClick}/>
+                                    <label htmlFor="19:45">19:45</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="22:00" name="hour-radio" value="22:00" onClick={this.onHourClick}/>
+                                    <label htmlFor="22:00">22:00</label>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" id={afterTommorow} name="day-radio" value={afterTommorow} onClick={this.onDayClick}/>
-                            <label htmlFor={afterTommorow}>{afterTommorow}</label>
-                        </div>
-                        <div>
-                            <input type="radio" id={afterAfterTommorow} name="day-radio" value={afterAfterTommorow} onClick={this.onDayClick}/>
-                            <label htmlFor={afterAfterTommorow}>{afterAfterTommorow}</label>
-                        </div>
-                        </div>
-                        <div className="Hour">
-                        <div>
-                            <input type="radio" id="12:30" name="hour-radio" value="12:30" onClick={this.onHourClick}/>
-                            <label htmlFor="12:30">12:30</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="14:00" name="hour-radio" value="14:00" onClick={this.onHourClick}/>
-                            <label htmlFor="14:00">14:00</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="16:30" name="hour-radio" value="16:30" onClick={this.onHourClick}/>
-                            <label htmlFor="16:30">16:30</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="19:45" name="hour-radio" value="19:45" onClick={this.onHourClick}/>
-                            <label htmlFor="19:45">19:45</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="22:00" name="hour-radio" value="22:00" onClick={this.onHourClick}/>
-                            <label htmlFor="22:00">22:00</label>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="tickets-container">
-                        <div>
-                            <label htmlFor="adult">Adult</label>
-                            <input type="number" id="adult" name="adult" min="0" max="35" onChange={this.onAdultChange}></input>
-                        </div>
-                        <div>
-                            <label htmlFor="senior">Senior</label>
-                            <input type="number" id="senior" name="senior" min="0" max="35" onChange={this.onSeniorChange}></input>
-                        </div>
-                        <div>
-                            <label htmlFor="student">Student</label>
-                            <input type="number" id="student" name="student" min="0" max="35" onChange={this.onStudentChange}></input>
+                        <div className="tickets-container">
+                            <h1>Tickets: </h1>
+                            <div>
+                                <label htmlFor="adult">Adult 25zł: </label>
+                                <input type="number" id="adult" name="adult" min="0" max="35" onChange={this.onAdultChange}></input>
+                            </div>
+                            <div>
+                                <label htmlFor="senior">Senior 20zł: </label>
+                                <input type="number" id="senior" name="senior" min="0" max="35" onChange={this.onSeniorChange}></input>
+                            </div>
+                            <div>
+                                <label htmlFor="student">Student 15zł: </label>
+                                <input type="number" id="student" name="student" min="0" max="35" onChange={this.onStudentChange}></input>
+                            </div>
                         </div>
                     </div>
                     <Link 

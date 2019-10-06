@@ -15,12 +15,11 @@ body {
     color: aliceblue;
 }
 
-/* 
-Color schemes:
-main: #2C3531
-2: #116466
-3: #DCB08C
-4: #FFCB9A
-5: #D1E8E2
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
 
-*/
+a:visited {
+    color: var(--main-color);
+}
