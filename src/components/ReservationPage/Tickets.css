@@ -1,0 +1,25 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 70vw;
+    height: 70vh;
+    background-color: antiquewhite;
+    margin-top: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+
+.date {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    
+}

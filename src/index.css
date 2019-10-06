@@ -1,0 +1,26 @@
+:root {
+    --main-color: #116466;
+    --light-main: #D1E8E2;
+    --secondary-color: #DCB08C;
+    --light-secondary: #FFCB9A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+}
+
+/* 
+Color schemes:
+main: #2C3531
+2: #116466
+3: #DCB08C
+4: #FFCB9A
+5: #D1E8E2
+
+*/

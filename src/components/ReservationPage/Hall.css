@@ -1,0 +1,54 @@
+.screen {
+    width: 900px;
+    height: 40px;
+    background-color: bisque;
+    margin: 30px auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(20, 99, 0);
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat:hover {
+    background-color: rgb(29, 146, 0);
+}
+
+.selectedSeat {
+    background-color: rgb(2, 0, 99);
+}
+
+.reservedSeat {
+    background-color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.rowName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+#btn-reservation {
+    margin: 20px 100;
+    background-color: yellow;
+    width: 150px;
+    height: 75px;
+    border-radius: 25px;
+}
