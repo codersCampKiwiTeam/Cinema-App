@@ -1,0 +1,34 @@
+.movie-container {
+    max-width: 342px;
+    background-color: black;
+    border-radius: 25px;
+    margin: 30px 30px;
+}
+
+.movie-header {
+    background-color: var(--secondary-color);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    padding: 0 10px;
+}
+
+.btn-movie {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: var(--light-main);
+    font-size: 20px;
+    margin: 0;
+}
+
+.poster {
+    margin: 0;
+}
+

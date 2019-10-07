@@ -1,0 +1,25 @@
+:root {
+    --main-color: #116466;
+    --light-main: #D1E8E2;
+    --secondary-color: #DCB08C;
+    --light-secondary: #FFCB9A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:visited {
+    color: var(--main-color);
+}
