@@ -6,7 +6,7 @@ class Hall extends React.Component {
     constructor(props) {
         super(props);
         const hrefArray = document.location.href.split("/");
-        const [ , , , , title, day, hour, adult, senior, student] = hrefArray;
+        const [ , , , , , title, day, hour, adult, senior, student] = hrefArray;
         const tickets = Number(adult) + Number(senior) + Number(student);
         this.state = { 
             title: decodeURI(title), 

@@ -116,7 +116,7 @@ class Tickets extends React.Component {
                         </div>
                     </div>
                     <Link 
-                    to={`/reservation-final-step/${document.location.href.slice(45)}/${day}/${hour}/${adultTickets}/${seniorTickets}/${studentTickets}`}
+                    to={`/reservation-final-step/${document.location.href.slice(71)}/${day}/${hour}/${adultTickets}/${seniorTickets}/${studentTickets}`}
                     >
                     <button id="btn-tickets" disabled>Next</button>
                     </Link>

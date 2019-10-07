@@ -7,7 +7,7 @@ class Header extends React.Component {
         return (
             <header>
                 <a href="/">
-                    <h1>Kiwi Cinema <i class="fas fa-video"></i></h1>
+                    <h1>Kiwi Cinema <i className="fas fa-video"></i></h1>
                 </a>
             </header>
         )

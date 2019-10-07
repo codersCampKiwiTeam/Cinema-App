@@ -10,7 +10,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header />
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.PUBLIC_URL}>
                     <Route path="/" exact component={MoviesList}></Route>
                     <Route path="/reservation-first-step" component={Tickets}></Route>
                     <Route path="/reservation-final-step" component={Reservation}></Route>
