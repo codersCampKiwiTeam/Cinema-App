@@ -64,38 +64,38 @@ class Tickets extends React.Component {
                             <div className="date">
                                 <div>
                                     <input type="radio" id={tommorow} name="day-radio" value={tommorow} onClick={this.onDayClick}/>
-                                    <label htmlFor={tommorow}>{tommorow}</label>
+                                    <label htmlFor={tommorow}> {tommorow}</label>
                                 </div>
                                 <div>
                                     <input type="radio" id={afterTommorow} name="day-radio" value={afterTommorow} onClick={this.onDayClick}/>
-                                    <label htmlFor={afterTommorow}>{afterTommorow}</label>
+                                    <label htmlFor={afterTommorow}> {afterTommorow}</label>
                                 </div>
                                 <div>
                                     <input type="radio" id={afterAfterTommorow} name="day-radio" value={afterAfterTommorow} onClick={this.onDayClick}/>
-                                    <label htmlFor={afterAfterTommorow}>{afterAfterTommorow}</label>
+                                    <label htmlFor={afterAfterTommorow}> {afterAfterTommorow}</label>
                                 </div>
                             </div>
-                            <h1>Hour</h1>
+                            <h1>Hour:</h1>
                             <div className="hour">
                                 <div>
                                     <input type="radio" id="12:30" name="hour-radio" value="12:30" onClick={this.onHourClick}/>
-                                    <label htmlFor="12:30">12:30</label>
+                                    <label htmlFor="12:30"> 12:30</label>
                                 </div>
                                 <div>
                                     <input type="radio" id="14:00" name="hour-radio" value="14:00" onClick={this.onHourClick}/>
-                                    <label htmlFor="14:00">14:00</label>
+                                    <label htmlFor="14:00"> 14:00</label>
                                 </div>
                                 <div>
                                     <input type="radio" id="16:30" name="hour-radio" value="16:30" onClick={this.onHourClick}/>
-                                    <label htmlFor="16:30">16:30</label>
+                                    <label htmlFor="16:30"> 16:30</label>
                                 </div>
                                 <div>
                                     <input type="radio" id="19:45" name="hour-radio" value="19:45" onClick={this.onHourClick}/>
-                                    <label htmlFor="19:45">19:45</label>
+                                    <label htmlFor="19:45"> 19:45</label>
                                 </div>
                                 <div>
                                     <input type="radio" id="22:00" name="hour-radio" value="22:00" onClick={this.onHourClick}/>
-                                    <label htmlFor="22:00">22:00</label>
+                                    <label htmlFor="22:00"> 22:00</label>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 .movie-container {
     max-width: 342px;
     background-color: black;
@@ -26,6 +28,13 @@
     background-color: var(--light-main);
     font-size: 20px;
     margin: 0;
+    color: var(--main-color);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1.5px 1.5px 3px rgb(8, 8, 8);
+    cursor: pointer;
 }
 
 .poster {

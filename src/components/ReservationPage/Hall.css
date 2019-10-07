@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 .hall {
     display: flex;
     flex-direction: column;
@@ -18,23 +20,27 @@
 .seat {
     width: 40px;
     height: 40px;
-    background-color: rgb(20, 99, 0);
+    background-color: rgb(156, 7, 7);
     margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .seat:hover {
-    background-color: rgb(29, 146, 0);
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
 }
 
 .selectedSeat {
-    background-color: rgb(2, 0, 99);
+    background-color: rgb(233, 12, 12);
 }
 
 .reservedSeat {
-    background-color: red;
+    background-color: var(--light-secondary);
 }
 
 .row {
@@ -49,14 +55,20 @@
     width: 40px;
     height: 40px;
     margin: 5px;
+    color: white;
 }
 
 #btn-reservation {
-    background-color: var(--main-color);
-    color: white;
+    background-color: white;
+    color: rgb(8, 8, 8);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 600;
     width: 150px;
     height: 50px;
     border: none;
     border-radius: 25px;
     margin: 20px auto;
+    cursor: pointer;
 }
