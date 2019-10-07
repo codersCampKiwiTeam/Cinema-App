@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 :root {
-    --main-color: #116466;
-    --light-main: #D1E8E2;
-    --secondary-color: #DCB08C;
-    --light-secondary: #FFCB9A;
+    --main-color: rgb(255, 255, 255);
+    --light-main: rgb(97, 2, 2);
+    --secondary-color: rgb(8, 8, 8);
+    --light-secondary: rgb(100, 97, 97);
 }
 
 * {
@@ -12,7 +14,9 @@
 
 body {
     background-color: rgb(44, 44, 44);
-    color: aliceblue;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
 }
 
 a {

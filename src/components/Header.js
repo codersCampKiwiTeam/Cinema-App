@@ -1,12 +1,13 @@
 import React from 'react';
 import "./Header.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends React.Component {
     render() {
         return (
             <header>
                 <a href="/">
-                    <h1>Kiwi Cinema</h1>
+                    <h1>Kiwi Cinema <i class="fas fa-video"></i></h1>
                 </a>
             </header>
         )
